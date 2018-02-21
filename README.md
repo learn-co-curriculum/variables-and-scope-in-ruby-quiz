@@ -42,7 +42,7 @@ oc.opinionate!
    invoke:
 
 ```ruby
-oc2 = OpinionatedClass()
+oc2 = OpinionatedClass.new()
 oc2.opinionate!
 ```
 
@@ -63,7 +63,7 @@ adjust this code to support this usage.
 
 6. What will happen with this code?
 
-```
+```ruby
 oc = OpinionatedClass.new()
 oc.dog = "Zebulon T. Bark"
 ```
