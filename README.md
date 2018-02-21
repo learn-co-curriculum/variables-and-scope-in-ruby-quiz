@@ -40,32 +40,29 @@ oc.opinionate!
 
 4. Your colleague is asking for some help debugging their code. When they
    invoke:
+   ```ruby
+   oc2 = OpinionatedClass.new()
+   oc2.opinionate!
+   ```
 
-```ruby
-oc2 = OpinionatedClass.new()
-oc2.opinionate!
-```
-
-they were expecting "Byron the Kleinpudel" to appear somewhere. It doesn't.
-Without running the code, what do you expect to see? How could you make this
-code work as your colleague is imagining?
+   they were expecting "Byron the Kleinpudel" to appear somewhere. It doesn't.
+   Without running the code, what do you expect to see? How could you make this
+   code work as your colleague is imagining?
 
 5. Another colleague is asking for some help tweaking this code. When they
    invoke:
+   ```ruby
+   oc3 = OpinionatedClass.new("Novak the Goldendoodle")
+   oc3.opinionate!
+   ```
 
-```ruby
-oc3 = OpinionatedClass("Novak the Goldendoodle")
-oc3.opinionate!
-```
-
-they want to see `Novak the Goldendoodle is the best dog ever`. How should they
-adjust this code to support this usage.
+   they want to see `Novak the Goldendoodle is the best dog ever`. How should they
+   adjust this code to support this usage.
 
 6. What will happen with this code?
+   ```ruby
+   oc = OpinionatedClass.new()
+   oc.dog = "Zebulon T. Bark"
+   ```
 
-```ruby
-oc = OpinionatedClass.new()
-oc.dog = "Zebulon T. Bark"
-```
-
-If the code will produce an error, suggest a bugfix.
+   If the code will produce an error, suggest a bugfix.
