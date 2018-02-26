@@ -12,9 +12,11 @@ immediately obvious. Incidentally, those are common tasks to assign in an
 interview: explaining buggy code and then debugging it. Accordingly, these are
 skills that we hope to help you grow over your course of study at Flatiron!
 
-## Quiz
+???
 
-Consider the following code:
+# Variables and Scope in Ruby Quiz
+
+## Consider the following code:
 
 ```ruby
 $best_dog_ever = "Byron the Moyen Poodle"
@@ -33,22 +35,43 @@ oc = OpinionatedClass.new()
 oc.opinionate!
 ```
 
-1. What does the `$` in front of `$best_dog_ever` signify?
+?: What does the `$` in front of `$best_dog_ever` signify?
 
-2. What does `.new()` return (and assign to `oc`)?
+( ) A protected variable
+( ) A static variable
+( ) A local variable
+(X) A global variable
 
-3. Predict what `oc.opinionate!` returns
+?: What does `.new()` return (and assign to `oc`)?
 
-4. Your colleague is asking for some help debugging their code. When they
+( ) A static copy of the `OpinionatedClass` class
+( ) A reference to the `OpinionatedClass` constructor
+(X) An instance of `OpinionatedClass`
+( ) An instance of `OpinionatedClass` with no instance variables initialized
+
+?: Predict what `oc.opinionate!` returns
+
+( ) Trick question, it doesn't emit anything
+(X) "Byron the Moyen Poodle is the best dog ever"
+( ) "undefined is the best dog ever"
+( ) " is the best dog ever"
+
+?: Your colleague is asking for some help debugging their code. When they
    invoke:
+
    ```ruby
    oc2 = OpinionatedClass.new()
    oc2.opinionate!
    ```
 
    they were expecting "Byron the Kleinpudel" to appear somewhere. It doesn't.
-   Without running the code, what do you expect to see? How could you make this
-   code work as your colleague is imagining?
+   Without running the code, what do you expect to see? Help your colleague
+   understand what's going on.
+
+(X) In `opinionate!` the method returns a global versus an instance variable
+( ) In `opinionate!` the method returns a instance versus an global variable
+( ) `@dog` is in the global namespace and needs to be in the class namespace
+
 
 5. Another colleague is asking for some help tweaking this code. When they
    invoke:
@@ -60,10 +83,16 @@ oc.opinionate!
    they want to see `Novak the Goldendoodle is the best dog ever`. How should they
    adjust this code to support this usage.
 
-6. What will happen with this code?
+( ) `puts(@dog.to_s + " is the best dog ever")`
+(X) `puts("#{@dog} is the best dog ever")`
+( ) `puts(String(@dog) + " is the best dog ever")`
+
+6. Will this code work?
+
    ```ruby
    oc = OpinionatedClass.new()
    oc.dog = "Zebulon T. Bark"
    ```
 
-   If the code will produce an error, suggest a bugfix.
+( ) Works
+(X) Nope, doesn't work
