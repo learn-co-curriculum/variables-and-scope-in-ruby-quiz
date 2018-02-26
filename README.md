@@ -5,11 +5,12 @@
 Welcome to our quiz! Quizzes are designed for knowledge exploration and finding
 weaknesses in your understanding. Use this to check up on your understanding.
 Even if you see the "right" answer, consider what it would take to change the
-given code to make it work. The more creatively you explore the false prompts
-so that you can provide what it would take to fix the error, the more you'll
-learn. Incidentally, those are common tasks to assign in an interview:
-explaining buggy code and then debugging it. Accordingly, these are skills that
-we hope to help you grow over your course of study at Flatiron!
+given code to make it work. Think through the bugs that may arise in the given
+code and consider multiple ways to fix the errors. Doing so will improve your
+learning as there is always more than one solution and that solution may not be
+immediately obvious. Incidentally, those are common tasks to assign in an
+interview: explaining buggy code and then debugging it. Accordingly, these are
+skills that we hope to help you grow over your course of study at Flatiron!
 
 ## Quiz
 
