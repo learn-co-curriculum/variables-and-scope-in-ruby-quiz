@@ -81,7 +81,7 @@ oc.opinionate!
    ```
 
    they want to see `Novak the Goldendoodle is the best dog ever`. How should they
-   adjust this code to support this usage.
+   adjust the provided starter code to support this usage?
 
 ( ) `puts(@dog.to_s + " is the best dog ever")`
 (X) `puts("#{@dog} is the best dog ever")`
