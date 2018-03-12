@@ -49,7 +49,7 @@ oc.opinionate!
 (X) An instance of `OpinionatedClass`
 ( ) An instance of `OpinionatedClass` with no instance variables initialized
 
-?: Predict what `oc.opinionate!` returns
+?: What does `oc.opinionate!` print?
 
 ( ) Trick question, it doesn't emit anything
 (X) "Byron the Moyen Poodle is the best dog ever"
