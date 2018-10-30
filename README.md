@@ -73,7 +73,7 @@ oc.opinionate!
 ( ) `@dog` is in the global namespace and needs to be in the class namespace
 
 
-5. Another colleague is asking for some help tweaking this code. When they
+?: Another colleague is asking for some help tweaking this code. When they
    invoke:
    ```ruby
    oc3 = OpinionatedClass.new("Novak the Goldendoodle")
@@ -87,7 +87,7 @@ oc.opinionate!
 (X) `puts("#{@dog} is the best dog ever")`
 ( ) `puts(String(@dog) + " is the best dog ever")`
 
-6. Will this code work?
+?: Will this code work?
 
    ```ruby
    oc = OpinionatedClass.new()
